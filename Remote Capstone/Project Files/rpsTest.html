@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+  
+  <div id="quote"></div>
+
+  <script>
+	
+    var myArray = ['January', 'February', 'March'];
+    var rand = Math.floor(Math.random() * myArray.length);
+
+    function showquote(){
+    document.getElementById('quote').innerHTML = myArray[rand];
+      }
+    showquote();
+	
+  </script>
+
+</body>
+</html>

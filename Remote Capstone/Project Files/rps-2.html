@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rock Paper Scissors</title>
+  <link rel = "stylesheet" type = "text/css" href = "rps.css" />
+  <script src="rps.js"></script>
+</head>
+
+<body>
+
+	<script>
+	var PlayerOne = prompt("Rock, Paper, or Scissors");
+var PlayerTwo = prompt("Rock, Paper, or Scissors");
+
+var Game = function(pl1,pl2){
+    var r = "Rock";
+    var p = "Paper";
+    var s = "Scissors";
+    if(pl1 === pl2){
+        console.log("Tie");
+    }else{
+        if(pl1===r&&pl2===s||pl1===p&&pl2===r||pl1===s&&pl2===p){
+            console.log("Player One Wins!");
+        }else{
+            console.log("Player Two Wins!");
+        }
+    }
+};
+
+Game(PlayerOne,PlayerTwo);
+};
+	</script>
+  
+  
+
+
+</body>
+</html>
